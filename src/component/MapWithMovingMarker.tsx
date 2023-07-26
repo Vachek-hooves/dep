@@ -6,7 +6,7 @@ import { Avatar } from './ui/Avatar';
 
 import Map, { Popup, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { MapGL } from './MapGL';
+// import { MapGL } from './MapGL';
 import '@aws-amplify/ui-react/styles.css';
 import '@aws-amplify/ui-react-geo/styles.css';
 
