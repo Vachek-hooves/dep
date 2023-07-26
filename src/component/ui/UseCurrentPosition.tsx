@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export const MyPosition = () => {
+export const UseCurrentPosition = () => {
     const [myPosition, setMyPosition] = useState({
         latitude: 0,
         longitude: 0

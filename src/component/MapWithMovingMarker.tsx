@@ -6,7 +6,7 @@ import { Button } from '@aws-amplify/ui-react';
 // import Map, { Popup, Marker } from 'react-map-gl/maplibre';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { MapGL } from './MapGL';
-import { MyPosition } from './ui/MyPosition';
+import { UseCurrentPosition } from './ui/UseCurrentPosition';
 
 export const MapWithMovingMarker = () => {
   // const [showPopup, setShowPopup] = useState<boolean>(true);
@@ -21,7 +21,7 @@ export const MapWithMovingMarker = () => {
       longitude: longitude + 0.014,
     });
 
-  const currentPos = MyPosition();
+  const currentPos = UseCurrentPosition();
 
   return (
     <div>
