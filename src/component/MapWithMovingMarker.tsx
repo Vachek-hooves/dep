@@ -34,7 +34,13 @@ export const MapWithMovingMarker = () => {
       </div>
       <Map
         initialViewState={{ zoom: 11, latitude: 50.45, longitude: 30.5333 }}
-        style={{ marginInline: 'auto', width: '80%', height: '60vh' }}
+        style={{
+          margin: '20px',
+          marginInline: 'auto',
+          width: '80%',
+          height: '60vh',
+          border: '1px solid',
+        }}
         mapStyle="https://api.maptiler.com/maps/streets/style.json?key=zfNoyld197Bj7dsKc5MR"
       >
         <Marker latitude={latitude} longitude={longitude} />
@@ -50,7 +56,7 @@ export const MapWithMovingMarker = () => {
           </Popup>
         )}
         <Marker latitude={50.416874} longitude={30.633}>
-          <Avatar  />
+          <Avatar />
           <Popup
             longitude={30.633}
             latitude={50.416874}
@@ -64,4 +70,4 @@ export const MapWithMovingMarker = () => {
       </Map>
     </div>
   );
-}
+};
